@@ -19,7 +19,7 @@ Winning model weights are hosted at:
 	s3://spacenet-dataset/spacenet-model-weights/spacenet-7/
 ```
 
-The winning solutions all use Docker, and assume SpaceNet 7 data is mounted in the `/data/` directory.  Each submission contains weights in the `weights` directory (some may need to be recombined, see `weights/README.txt`).
+The winning solutions all use Docker, and assume SpaceNet 7 data is mounted in the `/data/` directory.  
 
 Performance of the algorithms on the SpaceNet 7 final test set is shown below:
 
