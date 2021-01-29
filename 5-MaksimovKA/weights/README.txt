@@ -1,0 +1,1 @@
+See s3://spacenet-dataset/spacenet-model-weights/spacenet-7/

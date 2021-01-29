@@ -1,0 +1,37 @@
+{
+  "network": "timm_effnet_dragon",
+  "encoder": "tf_efficientnet_b7_ns",
+  "fp16": true,
+  "use_last_decoder": true,
+  "sigma": 2,
+  "data_multiplier": 10,
+  "num_classes": [3, 1],
+  "optimizer": {
+        "batch_size": 5,
+        "type": "AdamW",
+        "eps": 5e-6,
+        "weight_decay": 5e-4,
+        "learning_rate": 0.0001,
+        "schedule": {
+            "type": "cosine",
+            "mode": "step",
+            "epochs": 40,
+            "params": {
+              "T_max": 25400,
+              "eta_min": 7e-6
+            }
+        }
+    },
+   "input": 512,
+   "mask_loss": {
+    "type": "ComboLoss",
+    "params": {
+      "weights": {
+        "dice": 1,
+        "bce": 0.5,
+        "focal": 1
+      },
+      "channel_weights": [1, 0.1, 0.4]
+    }
+  }
+}

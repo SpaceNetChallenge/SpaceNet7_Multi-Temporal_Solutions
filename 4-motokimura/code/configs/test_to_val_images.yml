@@ -1,0 +1,6 @@
+PREDICTION_ROOT: '/val_predictions'
+ENSEMBLED_PREDICTION_ROOT: '/val_ensembled_predictions'
+REFINED_PREDICTION_ROOT: '/val_refined_predictions'
+POLY_ROOT: '/val_polygons'
+TRACKED_POLY_ROOT: '/val_tracked_polygons'
+TEST_TO_VAL: True

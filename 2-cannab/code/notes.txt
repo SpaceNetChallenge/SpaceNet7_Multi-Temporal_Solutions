@@ -1,0 +1,9 @@
+test.sh takes ~2 hours.
+
+train.sh takes ~1 day.
+
+All logs saved to /wdata/logs folder
+
+It's necessary to add '--ipc=host' option to run docker to test train.sh. Otherwise multithreaded pytorch's dataloader will crash.
+
+Use download.sh to download trained weight used for final submission. (Automaticly downloaded on docker start)
