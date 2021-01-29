@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://spacenet.ai"><img src="_data/sn_logo.png" width="350" alt="SpaceNet LLC"></a>
+<a href="https://spacenet.ai"><img src="_figs/sn_logo.png" width="350" alt="SpaceNet LLC"></a>
 </p>
 <h1 align="center">The SpaceNet 7 Multi-temporal Urban Development Challenge </h1>
 <h2 align="center">Winning Solutions</h2>
@@ -16,7 +16,7 @@ Data is hosted on aws at:
 
 Winning model weights are hosted at:
 ```
-	See s3://spacenet-dataset/spacenet-model-weights/spacenet-7/
+	s3://spacenet-dataset/spacenet-model-weights/spacenet-7/
 ```
 
 The winning solutions all use Docker, and assume SpaceNet 7 data is mounted in the `/data/` directory.  Each submission contains weights in the `weights` directory (some may need to be recombined, see `weights/README.txt`).
